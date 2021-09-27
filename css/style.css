@@ -1,0 +1,505 @@
+/* ! Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,600&display=swap&display=swap&subset=cyrillic-ext");
+@font-face {
+   font-family: "Caveat";
+   src: url("../fonts/Caveat-Bold.woff2") format("woff2"), url("../fonts/Caveat-Bold.woff") format("woff");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Caveat";
+   src: url("../fonts/Caveat-Medium.woff2") format("woff2"), url("../fonts/Caveat-Medium.woff") format("woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Caveat";
+   src: url("../fonts/Caveat-Regular.woff2") format("woff2"), url("../fonts/Caveat-Regular.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Caveat";
+   src: url("../fonts/Caveat-SemiBold.woff2") format("woff2"), url("../fonts/Caveat-SemiBold.woff") format("woff");
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+html,
+body {
+   height: 100%;
+}
+html {
+   font-size: 16px; /* по умолчанию */
+}
+body {
+   line-height: 1;
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 600;
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.cont {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+/* *общие классы */
+
+h2.cenblock {
+   text-align: left;
+   font-size: 16px;
+   font-family: "Caveat", cursive;
+   margin-bottom: 12px;
+}
+
+ul {
+   font-family: "Caveat", cursive;
+   font-weight: 400;
+}
+
+.ma {
+   margin-bottom: 40px;
+}
+
+/* ? Header blok i */
+.wrapper .cont {
+   display: flex;
+   flex-direction: column;
+}
+main {
+   flex: 1 1 auto;
+}
+
+header {
+   height: 50%;
+   margin-bottom: 50px;
+}
+
+header .menu {
+   max-width: 400px;
+   margin: -15px 0px 0px auto;
+   text-align: right;
+}
+
+header .menu ul li {
+   display: inline-block;
+   margin-right: 15px;
+}
+
+/* ! *****************************блок MAIN************************************** */
+/* *try1 */
+
+main {
+   max-height: 20%;
+   text-align: center;
+}
+
+.try1 div.cnt {
+   max-width: 400px;
+   background: rgba(165, 42, 42, 0.164);
+   padding: 40px 30px;
+   display: inline-block;
+   margin-left: -30px;
+   box-shadow: 2px 4px 10px #962, inset 2px 4px 8px rgb(139, 34, 153);
+   border-radius: 10px;
+   margin-top: -35px;
+}
+
+.try1 a span.inline,
+span.top,
+span.bot {
+   width: 20px;
+   height: 20px;
+   display: inline-block;
+   border-radius: 50%;
+   background: rgb(81, 156, 121);
+   border-bottom: 2px solid #867;
+}
+
+.try1 a span:hover {
+   border-top: 2px solid rgb(147, 162, 194);
+   border-bottom: none;
+}
+
+span.sewcond {
+   margin-left: -30px;
+}
+
+/* * tRY2 */
+
+.try2 .imi {
+   text-align: right;
+   line-height: 250%;
+   border: 5px dashed rgb(129, 81, 9);
+
+   background: burlywood;
+   padding: 12px;
+   border-radius: 23% 77% 4% 96% / 65% 30% 70% 35%;
+   overflow: hidden;
+}
+.try2 .imi div.aa {
+   display: inline-block;
+   max-width: 300px;
+   margin-right: 30px;
+   min-height: 300px;
+   vertical-align: middle;
+}
+.try2 .imi div.aaa {
+   display: inline-block;
+   max-width: 230px;
+   margin-right: 30px;
+   max-height: 300px;
+   overflow: hidden;
+   vertical-align: middle;
+}
+
+.try2 .imi div img {
+   padding: 53px;
+   width: 100%;
+   height: 100%;
+   background: rgb(113, 197, 169);
+   padding: 15px;
+   box-shadow: 2px 5px 12px rgb(57, 228, 5), inset 5px -5px 12px rgb(143, 102, 153);
+   border: 3px solid #775;
+}
+.try2 .imi .secimg {
+   background: cornflowerblue;
+   box-shadow: 2px 5px 12px rgb(102, 153, 150), inset -5px 5px 12px rgb(153, 102, 109);
+}
+
+.try2 .imi .aaa img {
+   width: 100%;
+   height: 100%;
+}
+
+.tryHeight {
+   min-height: 50%;
+}
+
+/* * tRY3 */
+.try3 {
+   padding: 3%;
+   background: rgba(136, 102, 119, 0.644);
+   font-size: 0;
+   opacity: 0.8;
+}
+.try3 .i {
+   font-size: 16px;
+   display: inline-block;
+   width: 30%;
+   padding: 20px;
+   background: #962;
+   vertical-align: middle;
+   visibility: hidden;
+   opacity: 0.3;
+   margin-right: 15px;
+}
+
+.try3 .i span {
+   display: inline-block;
+   padding: 10px;
+   background: #962;
+   opacity: 1;
+   visibility: initial;
+}
+
+.try3 .sec {
+   opacity: 1;
+   visibility: visible;
+   border: 15px solid rgb(33, 131, 85);
+   box-shadow: 6px 8px 18px rgb(4, 12, 14), inset 6px 9px 18px rgb(119, 51, 51);
+   padding: 3%;
+}
+.try3 .sec span {
+   visibility: hidden;
+}
+
+.try3 .thi {
+   opacity: 1;
+   visibility: visible;
+   border: 15px solid rgb(29, 83, 128);
+   box-shadow: -6px 8px 18px rgb(4, 12, 14), inset -6px 9px 18px rgb(62, 119, 51);
+   padding: 3%;
+}
+
+.try3 .thi span {
+   display: none;
+}
+
+.try3 .one {
+   opacity: 0.4;
+   visibility: hidden;
+   width: 75%;
+   margin-right: 0;
+   box-shadow: -3.5px -7px 11px rgb(62, 119, 51), inset -3.5px -7px 11px rgb(88, 51, 119);
+}
+
+.try3 .one span {
+   border: 2px dashed rgb(147, 214, 13);
+   border-radius: 12px 5px 7px 10px;
+   padding: 4px;
+   background: rgba(165, 42, 42, 0.164);
+}
+
+.try3 .bo_one {
+   display: inline-block;
+   border: 15px solid rgb(29, 83, 128);
+   font-size: 16px;
+   width: 30%;
+   text-align: center;
+   margin-right: 15px;
+   box-shadow: inset 0px 0px 110px 5px rgb(119, 109, 51), inset 0px -0px 110px rgb(119, 112, 51);
+   background: rgba(88, 51, 119, 0.219);
+}
+
+/* * tRY4 */
+
+.kakar .kacont {
+   max-width: 700px;
+   margin: 0 auto;
+   background: sandybrown;
+   min-height: 600px;
+   padding: 15px 10px;
+   border-radius: 19% 81% 32% 68% / 100% 0% 100% 0%;
+   border: 1.5px solid;
+   overflow: auto;
+}
+.kakar .kacont .col {
+   display: inline-block;
+   width: 47%;
+   padding: 5px;
+}
+.kakar .kacont .col1,
+.kakar .kacont .col2 {
+   margin-bottom: 30px;
+}
+
+.kakar .kacont .col span {
+   display: inline-block;
+   width: 90%;
+   margin-bottom: 15px;
+   box-shadow: inset -3px 0 20px 5px rgba(19, 145, 67, 0.603);
+   background: rgba(18, 108, 182, 0.568);
+   border: 1px dotted;
+   border-radius: 20px;
+}
+
+.kakar .kacont .col img {
+   display: inline-block;
+   width: 100%;
+   max-height: 200px;
+   padding: 20px;
+   background: seagreen;
+   border-radius: 45px;
+   box-shadow: 3px 5px 7px skyblue, inset 3px 5px 7px rgb(187, 135, 235);
+   opacity: 0.5;
+}
+
+.exper {
+   max-height: 68px;
+   overflow: hidden;
+   margin-bottom: 35px;
+}
+
+.exper img:nth-child(odd) {
+   opacity: 0.5;
+}
+/* ! Задачки от Евгения jekinizadchi */
+.jekinizadchi * {
+   font-weight: 400;
+   text-align: left;
+}
+.jekinizadchi h1 {
+   font-size: 20px;
+   font-family: "Lobster", cursive;
+   text-align: center;
+   color: #867;
+   margin-bottom: 20px;
+}
+
+.jekinizadchi {
+   margin-bottom: 30px;
+}
+.jekinizadchi h2 {
+   font-family: "Caveat", cursive;
+   margin-bottom: 15px;
+}
+
+.jekinizadchi .part {
+   margin-bottom: 35px;
+}
+
+.jekinizadchi .part1 div {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background: rgb(224, 210, 15);
+}
+
+.jekinizadchi .part2 p {
+   opacity: 0.5;
+}
+
+.jekinizadchi .part3 span {
+   border: 3px solid #743;
+   display: inline-block;
+   padding: 10px 5px;
+}
+.jekinizadchi .part4 div {
+   border-bottom: 3px solid #743;
+   border-top: 3px dashed rgb(87, 119, 51);
+   border-left: 5px dotted rgba(51, 78, 119, 0.411);
+   border-right: 5px double rgba(117, 51, 119, 0.411);
+   display: inline-block;
+   padding: 10px 5px;
+}
+
+.jekinizadchi .part5 a {
+   display: inline-block;
+   text-shadow: 0 -5px 7px rgba(135, 97, 241, 0.918);
+   box-shadow: 3px 4.5px 5px #743, -3px 4.5px 5px #743, 0px 4.5px 5px #743;
+}
+
+.onefo {
+   margin-bottom: 35px;
+}
+
+/* ? footer  */
+
+footer div {
+   text-align: center;
+}
+
+footer a {
+   font-size: 20px;
+   background: rgb(182, 183, 255);
+   font-family: "Caveat", cursive;
+   font-weight: 600;
+   padding: 19px;
+   display: inline-block;
+}
+
+/* ! Спасибо! */
+
+.spasibo {
+   text-align: center;
+   border-top: 8px solid #743;
+   border-bottom: 8px solid #743;
+   padding: 15px;
+}
+.spasibo > div {
+   display: inline-block;
+   width: 55px;
+   height: 40px;
+   font-size: 0;
+   margin-right: 20px;
+}
+.fis {
+   border: 3px solid #864;
+   border-right: none;
+}
+
+.p {
+   border: 3px solid #864;
+   border-bottom: none;
+}
+.a > div {
+   display: inline-block;
+   width: 17px;
+   height: 40px;
+}
+
+.a .o {
+   border-bottom: 4px solid #864;
+   border-right: 4px solid #864;
+   border-radius: 100% 0% 80% 20% / 100% 0% 100% 0%;
+}
+
+.a .oo {
+   border-top: 10px solid rgb(168, 128, 54);
+   height: 20px;
+   width: 5px;
+   border-radius: 50%;
+   background: none;
+}
+.a .ooo {
+   border-bottom: 4px solid #864;
+   border-left: 4px solid #864;
+   border-radius: 0% 100% 23% 77% / 0% 99% 1% 100%;
+}
+
+div.fi {
+   display: inline-block;
+   border: 3px solid #864;
+   border-right: none;
+   /* outline: 2px solid #872; */
+}
+div.fi .sec {
+   border-radius: 12px;
+   border-radius: 0% 100% 33% 67% / 100% 100% 0% 0%;
+   border-top: 3px solid #864;
+   /* background: #867; */
+   width: 55px;
+   height: 40px;
+}
+
+.i {
+   border-left: 3px solid #864;
+   border-right: 3px solid #864;
+}
+.i .nac {
+   display: inline-block;
+   border-top: 3px solid #864;
+   border-radius: 99% 1% 100% 0% / 100% 0% 100% 0%;
+   width: 50px;
+   height: 40px;
+}
+.spasibo .Lasto {
+   border: 3px solid #864;
+   border-radius: 40px;
+}
